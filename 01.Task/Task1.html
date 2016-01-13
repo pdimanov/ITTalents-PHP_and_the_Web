@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 1</title>
+	<style>
+		input[type="text"] {
+			width: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div id="root">
+		<form action="php/math.php" method="POST">
+			<input type="text" name="firstNum">
+			<select name="operation[]" id="operation">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+			<input type="text" name="secondNum">
+			<span> = </span>
+			<input type="submit" value="submit">
+		</form>
+	</div>
+</body>
+</html>
